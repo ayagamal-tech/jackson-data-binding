@@ -1,5 +1,5 @@
 # jackson-data-binding
-A simple Java application demonstrating how to map JSON to POJO and POJO to JSON using the Jackson library.
+A simple Java application demonstrating how to map JSON to POJO using the Jackson library.
 
 # Technologies Used
 * **IDE** Intellij IDEA
@@ -17,3 +17,11 @@ If you are testing this code and remove some parts, you might run into this erro
 **Why it happens:** Jackson requires a blank, default constructor (such as `public Student() { }`) to build the empty object before it can inject the JSON data.
 
 **Same Solution for similar case:** If you're interested, you can read this discussion: [Stackoverflow Discussion](https://stackoverflow.com/questions/55032293/cannot-construct-instance-of-class-name-although-at-least-on-creator-exists?newreg=4373655aa3904ed1b705fe94d2eed971) 
+
+## Concepts Demonstrated
+* **Basic Data Binding:** Converting flat JSON to Java Objects.
+* **Nested Objects:** Mapping JSON objects within objects to separate custom POJOs (such as mapping a `director` JSON object to a `Director.java` class).
+* **Collections:** Automatically mapping JSON arrays to Java `List<String>`.
+* **Jackson Annotations:**
+  * `@JsonProperty`: Resolving naming convention mismatches between JSON (`snake_case` or capitalized fields) and Java (`camelCase`).
+  * `@JsonIgnore`: Securing sensitive data by ignoring specific fields during serialization (hiding internal variables from the final JSON output).
