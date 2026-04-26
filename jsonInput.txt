@@ -1,0 +1,11 @@
+{
+  "video_id": 101,
+  "title": "The Student Of The Year",
+  "internal_budget": 63000000.00,
+  "is_available_in_4k": true,
+  "director": {
+    "firstName": "Alia",
+    "lastName": "Bhatt"
+  },
+  "castMembers": ["Varun Dhawan", "Sidharth Malhotra", "Kayoze Irani"]
+}
